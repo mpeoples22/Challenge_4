@@ -1,4 +1,4 @@
-<!--........-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,36 +9,41 @@
 </head>
     <!--Testbox-->
 <body class="master">
-  <header class="Go">
+  <header id="Go" >
     <div class="title">Welcome to Challenge_4 Quiz</div>
+     <p>
+       Each wrong answer takes time off the clock
+     </p>
   </header>
-   <div id="start_btn"><button>Start Quiz</button></div>
+  <div id="start"><button>Start Test</button></div>
 
-   <div id="welcome">
+  <div id="welcome">
 <!--Quiz Box-->
-     <section class="Test_box">
-      <div class="timer">
-        <div class="time_left">Time left</div>
-        <div class="timer_sec">10</div>
+    <section class="Test_box">
+       
+      <div id="timer" class="camo">
+        <div class="timeStat"> Time left: </div>
+        <div class="timerSec">10</div>
       </div>
-        <div class="questions">
+
+      <div class="questions">
             <!--questions here-->
-        </div>
-        <div class="answers">
+      </div>
+      <div class="answers">
            <!--answers here-->
-        </div>
-     </section>
+      </div>
+    </section>
      <!--quizbox footer-->
      <footer class="Test_box">
         <div class="total">
             <!--question count-->
         </div>
      </footer>
-  </div>
+   </div>
 
       
 
   <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/q_a.js"></script>
+  <script src="./assets/js/questions.js"></script>
 </body>
 </html>

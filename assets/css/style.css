@@ -25,8 +25,17 @@ body{
     color:khaki;
     background:lavender;
 }
-
-#welcome{
+.card{
+    display:inline-flexbox;
+    float: right;
+    position:absolute;
+    top: 20px;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
+             0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#slide{
     visibility: hidden;
 }
 form{
@@ -34,10 +43,13 @@ form{
     flex-wrap: wrap;
     align-items: flex-end;
 }
+.camo{
+    display: none;
+}
 
 .start_btn,
 .Test_box{
-   position:absolute;
+   display:flex;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
@@ -45,11 +57,12 @@ form{
             0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .page-content{
+    display: block;
     flex-wrap:wrap;
     flex: 1;
     display: flex;
     justify-content: center;
     margin: 25px auto;
-    width: 95%
+    width: 80%
 
 }

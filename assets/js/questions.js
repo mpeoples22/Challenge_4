@@ -1,5 +1,5 @@
 //array passing number,questions,options and answers
-let questions = [
+var question = [
     {
      numb: 1,
      question: "What does CSS stand for?",
@@ -9,8 +9,8 @@ let questions = [
          "Caught Sun Surfing",
          "Can't See Savy",
          "Cascading Style Sheet"
-     ]
- },
+        ]
+    },
     {
     numb: 2,
     question: "What is a event",
@@ -19,17 +19,17 @@ let questions = [
     "Boxing Match",
     "Computer Language",
     "A specific Action"
-    ]
- },
+      ]
+    },
     {
     numb: 3,
     question: "What is HTML",
-    answer: "Hyper Text Markup Langquage",
+    answer: "Hyper Text Markup Language",
     options: [
             "Hot Tamale Under Lunch",
             "Hold Tight U late",
             "Hyper Text Markup Language",
             "Hooked Tied Masked Lover"
-    ]
- },
-]
+        ]
+    }
+];
