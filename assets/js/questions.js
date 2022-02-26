@@ -2,7 +2,7 @@
 var question = [
     {
      numb: 1,
-     question: "What does CSS stand for?",
+     question: "What does CSS stand for ?",
      answer: "Cascading Style Sheet",
      options: [
          "Cold Sandwich Sausage",
@@ -13,7 +13,7 @@ var question = [
     },
     {
     numb: 2,
-    question: "What is a event",
+    question: "...What is a event ",
     answer: "A specific Action",
     options: [ "Concert",
     "Boxing Match",
@@ -23,7 +23,7 @@ var question = [
     },
     {
     numb: 3,
-    question: "What is HTML",
+    question: "What is HTML..?! ",
     answer: "Hyper Text Markup Language",
     options: [
             "Hot Tamale Under Lunch",

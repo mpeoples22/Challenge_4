@@ -1,7 +1,8 @@
 var num = 0;
 var time;
 var timeText = document.querySelector("#timer");
-var timeCount = document.querySelector(".timer_sec");
+var timeStat = document.querySelector(".timeStat");
+var timeCount = document.querySelector(".timerSec");
 var heading = document.querySelector("#Go")
 var testBox = document.querySelector( ".Test_box");
 var questionEl= document.querySelector(".questions")
@@ -19,9 +20,9 @@ function startTest(){
        heading.setAttribute("class","camo");
        start_btn.setAttribute("class","camo");
        testBox.setAttribute("class","page-content")
-       
-       setTimr();
-       getQuestion();
+       endTest();
+       //setTimr();
+      // getQuestion();
 
 }
 
@@ -71,19 +72,27 @@ function setTimr(){
     timeText.removeAttribute("class");
     timeText.setAttribute("class","card")
     time = question.length * 5;
-   // timeCount.innerHTML = time;
-  /*  count = setInterval(timer, 1000);
-    timeCount.textContent = time;
+    timeCount.innerHTML = time;
+   
+    count = setInterval(function(){
+      timeCount.textContent = time;
         time--;
         if(time > 0 ){
             timeCount.textContent = time;
         }
         if(time < 0){
             clearInterval(count);
-            textTime.textContent = "times up"
-        }*/
+            timeStat.textContent = "Times Up!..."
+        }
+    } ,1000);
+    endTest();
 }
-
+function endTest(){
+    var endView = document.querySelector("#finish");
+    endView.removeAttribute("class");
+    var Stats = document.querySelector("#stats");
+    Stats.innerHTML = num + " of " + question.length;
+}
 
 start_btn.onclick=startTest;
 
